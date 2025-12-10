@@ -20,7 +20,7 @@ print("Part 1:", max(area(*t) for t in all_tuples))
 
 
 def edge(a, b) -> set:
-    s, e = min(a, b), max(a, b)
+    s, e = sorted((a, b))
     if s[0] == e[0]:
         return {(s[0], i) for i in range(s[1], e[1] + 1)}
     else:

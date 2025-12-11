@@ -14,7 +14,7 @@ def area(a, b):
     return mul(*(abs(a[i] - b[i]) + 1 for i in (0, 1)))
 
 
-all_tuples = [(a, b) for i, a in enumerate(tiles) for b in tiles[i:]]
+all_tuples = [(a, b) for i, a in enumerate(tiles) for b in tiles[i + 1 :]]
 
 print("Part 1:", max(area(*t) for t in all_tuples))
 

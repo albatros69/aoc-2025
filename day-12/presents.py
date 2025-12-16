@@ -30,7 +30,7 @@ for i, l in enumerate(lines):
 
 
 def area(present) -> int:
-    return sum(a for a in present)
+    return sum(present)
 
 
 print(

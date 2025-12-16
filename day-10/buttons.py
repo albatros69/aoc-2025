@@ -122,4 +122,4 @@ machines = [Machine(l) for l in lines]
 print("Part 1:", sum(m.power_up() for m in machines))
 # Works only on tests and some lines of the inputs. Fails on some
 # others unfortunately... Reddit points to Z3 linear solver.
-print("Part 2:", sum(m.configure() for m in machines))
+# print("Part 2:", sum(m.configure() for m in machines))
